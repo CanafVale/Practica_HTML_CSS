@@ -1,0 +1,20 @@
+/* Variables de colores y fuente global */
+:root {
+    --color-primario: #86BC25; /* Verde principal */
+    --color-secundario: #BACB25; /* Verde claro */
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+    --color-azul-medio: #6176A2;
+    --color-azul-claro: #4CB3DA;
+    --color-azul-oscuro: #002776;
+    --fuente-principal: 'Open Sans', sans-serif;
+}
+
+/* Fuente global */
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+    margin: 0;
+    padding: 0;
+}
