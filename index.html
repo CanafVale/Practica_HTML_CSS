@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El reto de Ana</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con barra de navegación -->
+    <header class="header">
+        <div class="logo">El reto de Ana</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="banner">
+        <h1>Bienvenido a El reto de Ana</h1>
+        <p>Explora mis proyectos y habilidades.</p>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="info">
+        <h2>Sobre Mí</h2>
+        <p>Descripción breve sobre ti o tu personaje.</p>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="skills">
+        <h2>Mis Habilidades</h2>
+        <div class="progress-bar">HTML</div>
+        <div class="progress-bar">CSS</div>
+        <div class="progress-bar">Git</div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="grid-projects">
+            <div class="project">Proyecto 1</div>
+            <div class="project">Proyecto 2</div>
+            <div class="project">Proyecto 3</div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contact" class="contact-form">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="apellidos" placeholder="Apellidos" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje" maxlength="180" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025. Para más información, contacta con El reto de Ana.</p>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookie Settings</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
