@@ -1,18 +1,31 @@
+/* Estilos del header */
 .header {
-    position: sticky;
-    top: 0;
-    background-color: var(--color-negro);
-    color: var(--color-blanco);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
     padding: 1rem;
-    z-index: 999;
+    position: relative;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--color-blanco);
+    margin: 0;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .menu-toggle {
@@ -22,16 +35,20 @@
     color: var(--color-blanco);
     font-size: 1.5rem;
     cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
 }
 
 .nav {
     display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: var(--color-negro);
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
-    background-color: var(--color-negro);
-    text-align: center;
     padding: 1rem 0;
 }
 
@@ -45,20 +62,34 @@
 }
 
 .nav a {
-    color: var(--color-blanco);
     text-decoration: none;
+    color: var(--color-blanco);
     font-weight: bold;
+    transition: color 0.3s;
+    display: block;
+    padding: 0.5rem;
 }
 
-@media (width > 768px) {
+.nav a:hover {
+    color: var(--color-primario);
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        padding: 1.5rem;
+    }
+
     .menu-toggle {
         display: none;
     }
+
     .nav {
         display: flex;
         position: static;
         width: auto;
     }
+
     .nav ul {
         flex-direction: row;
         gap: 15px;
