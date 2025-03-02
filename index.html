@@ -38,7 +38,7 @@
         <h2>Bienvenido a El reto de Ana</h2>
         <p>Explora mis proyectos y habilidades.</p>
     </section>
-    
+
     <section class="banner-image">
         <h2>Descubre más sobre mis proyectos</h2>
     </section>
@@ -90,16 +90,41 @@
         </section>
     </main>
 
-    <section id="contact" class="contact-form">
+     <section id="contact" class="contact-form">
         <h2>Contacto</h2>
         <form>
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required>
 
-            <label for="mensaje">Mensaje</label>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="github">Github username</label>
+            <input type="text" id="github" name="github" pattern="^@[^\s]+" placeholder="Con este formato (@<username>)">
+
+            <fieldset>
+                <legend>¿Cómo me conociste?</legend>
+                <input type="radio" id="universidad" name="conocido" value="universidad" required>
+                <label for="universidad">Universidad</label>
+                <input type="radio" id="kickoff" name="conocido" value="kickoff">
+                <label for="kickoff">Keepcoding kick-off</label>
+                <input type="radio" id="colegio" name="conocido" value="colegio">
+                <label for="colegio">Colegio</label>
+                <input type="radio" id="github" name="conocido" value="github">
+                <label for="github">Github</label>
+            </fieldset>
+
+            <label for="mensaje">Más información</label>
             <textarea id="mensaje" name="mensaje" maxlength="180" required></textarea>
 
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Quiero acceso a la newsletter</label>
+
             <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
         </form>
     </section>
 
