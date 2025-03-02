@@ -1,7 +1,7 @@
 /* Estilos base - Mobile First */
 .footer {
-    background-color: var(--color-negro);
-    color: var(--color-blanco);
+    background-color: var(--color-blanco);
+    color: var(--color-gris-texto);
     text-align: center;
     padding: 1.5rem;
 }
@@ -23,9 +23,15 @@
     gap: 8px;
 }
 
-.footer-links a,
-.social-links a {
+.footer-links a {
     color: var(--color-azul-claro);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a {
+    color: var(--color-azul-oscuro);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;

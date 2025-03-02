@@ -17,6 +17,7 @@
     <!-- Header con barra de navegación -->
     <header class="header">
         <div class="logo">El reto de Ana</div>
+        <button class="menu-toggle">☰</button>
         <nav class="nav">
             <ul>
                 <li><a href="#about">Sobre mí</a></li>
@@ -39,12 +40,23 @@
         <p>Descripción breve sobre ti o tu personaje.</p>
     </section>
 
-    <!-- Sección Habilidades -->
-    <section id="skills" class="skills">
+    <!-- Sección Habilidades con barras de progreso -->
+    <section id="skills" class="info">
         <h2>Mis Habilidades</h2>
-        <div class="progress-bar">HTML</div>
-        <div class="progress-bar">CSS</div>
-        <div class="progress-bar">Git</div>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="progress-container">
+                <div class="progress-bar animate" style="width: 90%;"></div>
+            </div>
+            <div class="skill">CSS</div>
+            <div class="progress-container">
+                <div class="progress-bar animate" style="width: 85%;"></div>
+            </div>
+            <div class="skill">Git</div>
+            <div class="progress-container">
+                <div class="progress-bar animate" style="width: 70%;"></div>
+            </div>
+        </div>
     </section>
 
     <!-- Sección Proyectos -->

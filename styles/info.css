@@ -1,0 +1,55 @@
+/* Estilos base - Mobile First */
+.info {
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.info h2 {
+    color: var(--color-primario);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Contenedor de las barras de progreso */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background-color: var(--color-primario);
+    transition: width 2s ease-in-out;
+}
+
+/* Animación para la carga de la barra */
+@media (prefers-reduced-motion: no-preference) {
+    .progress-bar.animate {
+        width: 100%;
+    }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    .info {
+        max-width: 800px;
+    }
+}
