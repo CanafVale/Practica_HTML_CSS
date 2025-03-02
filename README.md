@@ -12,18 +12,18 @@ Este proyecto consiste en una página web estática desarrollada con **HTML y CS
 
 ## Estructura del Proyecto
 
-│── 📁 assets / # Imágenes y videos 
-│── 📁 styles/ # Archivos CSS 
-│── 📄 index.html # Página principal 
-│── 📄 projects.html # Página de proyectos 
-│── 📄 README.md # Documentación
+│── assets / # Imágenes y videos 
+│── styles/ # Archivos CSS 
+│── index.html # Página principal 
+│── projects.html # Página de proyectos 
+│── README.md # Documentación
 
 ## Características Principales
 
-✅ **Diseño Mobile First**  
-✅ **Estilos CSS organizados**  
-✅ **Animaciones y efectos**   
-✅ **Formulario de contacto validado**  
+**Diseño Mobile First**  
+**Estilos CSS organizados**  
+**Animaciones y efectos**   
+**Formulario de contacto validado**  
 
 ---
 
