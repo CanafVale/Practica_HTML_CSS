@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El reto de Ana</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/banner.css">
-    <link rel="stylesheet" href="styles/info.css">
-    <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Header con barra de navegación -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El reto de Ana</title>
+        <meta property="og:title" content="El reto de Ana">
+        <meta property="og:description" content="Mi sitio web personal con proyectos y habilidades">
+        <meta property="og:image" content="assets/about.jpg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/banner.css">
+        <link rel="stylesheet" href="styles/info.css">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/footer.css">
+    </head>
+<body class="main-bg">
     <header class="header">
-        <div class="logo">El reto de Ana</div>
-        <button class="menu-toggle">☰</button>
+        <h1 class="sr-only">El reto de Ana</h1>
+        <h1 class="logo">El reto de Ana</h1>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
         <nav class="nav">
             <ul>
                 <li><a href="#about">Sobre mí</a></li>
@@ -28,64 +34,79 @@
         </nav>
     </header>
 
-    <!-- Banner principal -->
     <section class="banner">
-        <h1>Bienvenido a El reto de Ana</h1>
+        <h2>Bienvenido a El reto de Ana</h2>
         <p>Explora mis proyectos y habilidades.</p>
     </section>
-
-    <!-- Sección Sobre Mí -->
-    <section id="about" class="info">
-        <h2>Sobre Mí</h2>
-        <p>Descripción breve sobre ti o tu personaje.</p>
+    
+    <section class="banner-image">
+        <h2>Descubre más sobre mis proyectos</h2>
     </section>
 
-    <!-- Sección Habilidades con barras de progreso -->
-    <section id="skills" class="info">
-        <h2>Mis Habilidades</h2>
-        <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="progress-container">
-                <div class="progress-bar animate" style="width: 90%;"></div>
+    <main class="main">
+        <article id="about" class="info">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <aside class="about-box">
+                    <p>¡Bienvenido! Soy Ana, apasionada de la tecnología y el desarrollo web.</p>
+                    <h3>Datos sobre mí:</h3>
+                    <ul>
+                        <li>📍 Ubicación: Madrid, España</li>
+                        <li>🎓 Formación en Data Science y Full Stack</li>
+                        <li>💡 Aprendiendo HTML, CSS y JavaScript</li>
+                    </ul>
+                </aside>
+                <figure class="about-image">
+                    <img src="assets/about.jpg" alt="Foto sobre mí">
+                </figure>
             </div>
-            <div class="skill">CSS</div>
-            <div class="progress-container">
-                <div class="progress-bar animate" style="width: 85%;"></div>
-            </div>
-            <div class="skill">Git</div>
-            <div class="progress-container">
-                <div class="progress-bar animate" style="width: 70%;"></div>
-            </div>
-        </div>
-    </section>
+        </article>
 
-    <!-- Sección Proyectos -->
-    <section id="projects" class="projects">
-        <h2>Mis Proyectos</h2>
-        <div class="grid-projects">
-            <div class="project">Proyecto 1</div>
-            <div class="project">Proyecto 2</div>
-            <div class="project">Proyecto 3</div>
-        </div>
-    </section>
+        <section id="skills" class="info">
+            <h2>Mis Habilidades</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+                <div class="skill">CSS</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+                <div class="skill">JavaScript</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Formulario de contacto -->
+        <section id="projects" class="projects">
+            <h2>Mis Proyectos</h2>
+            <div class="grid-projects">
+                <article class="project">Proyecto 1</article>
+                <article class="project">Proyecto 2</article>
+                <article class="project">Proyecto 3</article>
+            </div>
+        </section>
+    </main>
+
     <section id="contact" class="contact-form">
         <h2>Contacto</h2>
         <form>
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="text" name="apellidos" placeholder="Apellidos" required>
-            <input type="tel" name="telefono" placeholder="Teléfono" required>
-            <textarea name="mensaje" placeholder="Escribe tu mensaje" maxlength="180" required></textarea>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" maxlength="180" required></textarea>
+
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>© 2025. Para más información, contacta con El reto de Ana.</p>
-            <div class="footer-links">
+            <p>© 2025 El reto de Ana</p>
+            <nav class="footer-links">
                 <ul>
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Terms of Use</a></li>
@@ -94,14 +115,14 @@
                     <li><a href="#">Security</a></li>
                     <li><a href="#">Cookies</a></li>
                 </ul>
-            </div>
-            <div class="social-links">
+            </nav>
+            <nav class="social-links">
                 <ul>
                     <li><a href="#">LinkedIn</a></li>
                     <li><a href="#">GitHub</a></li>
                     <li><a href="#">Twitter</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </footer>
 </body>

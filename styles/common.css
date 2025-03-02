@@ -1,7 +1,6 @@
-/* Variables de colores y fuente global */
 :root {
-    --color-primario: #86BC25; /* Verde principal */
-    --color-secundario: #BACB25; /* Verde claro */
+    --color-primario: #86BC25;
+    --color-secundario: #BACB25;
     --color-negro: #000000;
     --color-blanco: #FFFFFF;
     --color-azul-medio: #6176A2;
@@ -11,11 +10,22 @@
     --fuente-principal: 'Open Sans', sans-serif;
 }
 
-/* Fuente global */
 body {
     font-family: var(--fuente-principal);
     color: var(--color-negro);
     background-color: var(--color-blanco);
     margin: 0;
     padding: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }

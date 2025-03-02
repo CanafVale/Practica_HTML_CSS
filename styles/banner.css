@@ -1,0 +1,47 @@
+.banner {
+    text-align: center;
+    background: var(--color-secundario); /* Verde secundario */
+    color: var(--color-blanco);
+    padding: 1rem 0; /* Reduce la altura del banner */
+}
+
+
+.banner h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+.banner-image {
+    text-align: center;
+    color: var(--color-blanco);
+    padding: 2rem 1rem;
+    background-image: url("../assets/ascenso.jpg");
+    background-size: cover; /* Asegura que la imagen cubra el área */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh; /* Reducida a un 30% del viewport */
+    max-height: 250px; /* Límite para que no se haga muy grande en pantallas grandes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .banner-image {
+        background-image: url("../assets/ascenso_movil.jpg");
+        height: 25vh; /* Un poco más pequeña en móviles */
+        max-height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-image h2 {
+        font-size: 1rem; /* Reducir tamaño del texto */
+        padding: 0.5rem;
+    }
+}
+

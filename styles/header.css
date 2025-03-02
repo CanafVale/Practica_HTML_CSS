@@ -1,13 +1,13 @@
-/* Estilos base - Mobile First */
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    position: sticky;
+    top: 0;
     background-color: var(--color-negro);
     color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
-    position: relative;
+    z-index: 999;
 }
 
 .logo {
@@ -15,7 +15,6 @@
     font-weight: bold;
 }
 
-/* Botón de menú hamburguesa */
 .menu-toggle {
     display: block;
     background: none;
@@ -23,21 +22,16 @@
     color: var(--color-blanco);
     font-size: 1.5rem;
     cursor: pointer;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
 }
 
-/* Navbar oculta en móviles */
 .nav {
     display: none;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    background-color: var(--color-negro);
     position: absolute;
     top: 100%;
     left: 0;
+    width: 100%;
+    background-color: var(--color-negro);
+    text-align: center;
     padding: 1rem 0;
 }
 
@@ -51,35 +45,20 @@
 }
 
 .nav a {
-    text-decoration: none;
     color: var(--color-blanco);
+    text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
-    display: block;
-    padding: 0.5rem;
 }
 
-.nav a:hover {
-    color: var(--color-primario);
-}
-
-/* Estilos para pantallas más grandes */
-@media (min-width: 768px) {
-    .header {
-        flex-direction: row;
-        padding: 1.5rem;
-    }
-
+@media (width > 768px) {
     .menu-toggle {
         display: none;
     }
-
     .nav {
         display: flex;
         position: static;
         width: auto;
     }
-
     .nav ul {
         flex-direction: row;
         gap: 15px;

@@ -6,6 +6,7 @@
     padding: 1.5rem;
 }
 
+/* Contenedor general del footer */
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -13,6 +14,7 @@
     gap: 10px;
 }
 
+/* Bloque de enlaces de políticas */
 .footer-links ul,
 .social-links ul {
     list-style: none;
@@ -23,6 +25,7 @@
     gap: 8px;
 }
 
+/* Estilos de los enlaces del footer */
 .footer-links a {
     color: var(--color-azul-claro);
     text-decoration: none;
@@ -30,6 +33,7 @@
     transition: color 0.3s;
 }
 
+/* Enlaces de redes sociales */
 .social-links a {
     color: var(--color-azul-oscuro);
     text-decoration: none;
@@ -43,13 +47,14 @@
 }
 
 /* Estilos para pantallas más grandes */
-@media (min-width: 768px) {
+@media (width > 768px) {
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
         width: 80%;
         margin: 0 auto;
     }
+
     .footer-links ul,
     .social-links ul {
         flex-direction: row;
