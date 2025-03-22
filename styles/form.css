@@ -2,84 +2,86 @@
 .contact-form {
     text-align: center;
     padding: 2rem;
-}
-
-.contact-form form {
+  }
+  
+  .contact-form form {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     width: 90%;
     max-width: 400px;
     margin: 0 auto;
-}
-
-.contact-form label {
+  }
+  
+  .contact-form label {
     text-align: left;
     font-weight: bold;
-    font-size: 0.75rem; 
-}
-
-.contact-form input,
-.contact-form textarea {
+    font-size: 0.75rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid var(--color-azul-claro);
     border-radius: 5px;
-    font-size: 0.8rem; 
-}
-
-.contact-form fieldset {
+    font-size: 0.8rem;
+  }
+  
+  .contact-form fieldset {
     border: none;
     text-align: left;
-    font-size: 0.75rem; 
-}
-
-.contact-form legend {
+    font-size: 0.75rem;
+  }
+  
+  .contact-form legend {
     font-weight: bold;
     margin-bottom: 0.4rem;
-    font-size: 0.75rem; 
-}
-
-.contact-form input[type="radio"] {
+    font-size: 0.75rem;
+  }
+  
+  .contact-form input[type="radio"] {
     margin-right: 0.4rem;
-}
-
-.contact-form input[type="checkbox"] {
+  }
+  
+  .contact-form input[type="checkbox"] {
     margin-right: 0.4rem;
-}
-
-.contact-form button {
+  }
+  
+  /* Contenedor de los botones */
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    max-width: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Estilos de los botones */
+  .contact-form button {
     background: var(--color-primario);
     color: var(--color-blanco);
     border: none;
-    padding: 0.5rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    width: 100%;
-    max-width: 180px;
-    margin: 0 auto;
-    font-size: 0.8rem; 
-}
-
-.contact-form button:hover {
+    font-size: 0.8rem;
+    width: auto;
+  }
+  
+  .contact-form button:hover {
     background: var(--color-secundario);
-}
-
-/* Responsive: Ajustes para pantallas más grandes */
-@media (min-width: 768px) {
-    .contact-form form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.8rem;
+  }
+  
+  /* Responsive: apila los botones en pantallas pequeñas */
+  @media (max-width: 480px) {
+    .form-buttons {
+      flex-direction: column;
+      align-items: center;
     }
-    .contact-form label,
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form fieldset {
-        grid-column: span 2;
-    }
-    .contact-form button {
-        grid-column: span 1;
-    }
-}
+  }
+  
