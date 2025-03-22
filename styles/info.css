@@ -39,7 +39,6 @@
 .progress-bar {
     height: 20px;
     background-color: var(--color-primario);
-    transition: width 2s ease-in-out;
 }
 
 @media (width > 768px) {
@@ -81,3 +80,30 @@
     left: 0;
     top: 0;
 }
+
+/* Animación de carga para las barras de progreso */
+@keyframes cargarBarra {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--ancho);
+    }
+}
+
+.progress-bar {
+    animation: cargarBarra 3s ease forwards;
+}
+
+/* Clases específicas con el valor de ancho para cada barra */
+.progreso-ingles     { --ancho: 100%; }
+.progreso-valenciano { --ancho: 100%; }
+.progreso-frances    { --ancho: 50%; }
+.progreso-aleman     { --ancho: 20%; }
+
+.progreso-r          { --ancho: 90%; }
+.progreso-python     { --ancho: 70%; }
+.progreso-html       { --ancho: 20%; }
+.progreso-css        { --ancho: 20%; }
+.progreso-javascript { --ancho: 20%; }
+
