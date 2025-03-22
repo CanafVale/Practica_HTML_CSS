@@ -1,7 +1,6 @@
 .info {
     text-align: center;
     padding: 2rem 1rem;
-    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -44,9 +43,6 @@
 }
 
 @media (width > 768px) {
-    .info {
-        max-width: 800px;
-    }
     .about-content {
         flex-direction: row;
         align-items: flex-start;
