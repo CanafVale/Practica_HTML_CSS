@@ -1,208 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>El reto de Ana</title>
-        <meta property="og:title" content="El reto de Ana">
-        <meta property="og:description" content="Mi sitio web personal con proyectos y habilidades">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/common.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/banner.css">
-        <link rel="stylesheet" href="styles/info.css">
-        <link rel="stylesheet" href="styles/form.css">
-        <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="styles/projects.css">
-    </head>
-<body class="main-bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El reto de Ana</title>
+    <meta property="og:title" content="El reto de Ana" />
+    <meta
+      property="og:description"
+      content="Mi sitio web personal con proyectos y habilidades"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/banner.css" />
+    <link rel="stylesheet" href="styles/info.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+  </head>
+  <body class="main-bg">
     <header class="header">
-        <h1 class="sr-only">El reto de Ana</h1>
-        <div class="header-logo">
-            <img src="assets/espalda.jpg" alt="Logo El reto de Ana" class="logo-img">
-            <h1 class="logo">El reto de Ana</h1>
-        </div>
-        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-        <nav class="nav">
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+      <h1 class="sr-only">El reto de Ana</h1>
+      <div class="header-logo">
+        <img
+          src="assets/espalda.jpg"
+          alt="Logo El reto de Ana"
+          class="logo-img"
+        />
+        <h1 class="logo">El reto de Ana</h1>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-
     <section class="banner">
-        <h2>Bienvenido a la historia sobre mi camino</h2>
-        <p>Te comparto mis proyectos y habilidades</p>
+      <h2>Bienvenido a la historia sobre mi camino</h2>
+      <p>Te comparto mis proyectos y habilidades</p>
     </section>
 
     <section class="banner-image">
-        <h2>Comencemos</h2>
+      <h2>Comencemos</h2>
     </section>
 
     <main class="main main-content">
-        <article id="about" class="info">
-            <h2>Sobre mí</h2>
-            <div class="about-content">
-                <aside class="about-box">
-                    <p>¡Bienvenid@! Soy Ana y quiero contarte el camino que he emprendido en los últimos años.     
-                        <br>
-                        Una reinvención profesional que me ha llevado a formarme en Data Science y Full Stack.    
-                        <br>
-                        Llegué a este mundo de la programación por casualidad, y ahora no quiero irme de aquí!</p>
-                    <h3>Datos sobre mí:</h3>
-                    <ul>
-                        <li>📍 Vivo: Canet de Berenguer, un pueblo de solo 6k habitantes</li>
-                        <li>📍 Trabajo: part-time en Madrid</li>
-                        <li>🎓 Estudie ADE en la Universidad Politécnica de Valencia</li>
-                        <li>🎓 Soy auditora ROAC</li>
-                        <li>🎓 Llevo 20 años trabajando en una Big Four de Auditoría</li>
-                        <li>🎓 Hace dos años hice un máster en Data Science y Big Data</li>
-                        <li>💡 Actualmente, cursando el Bootcamp de Web Full Stack Developer, así que aprendiendo HTML, CSS y JavaScript</li>
-                    </ul>
-                    <h3>Extracurricular:</h3>
-                    <p>Tengo 2 hijos y 3 gatos</p>
-                    <p>Me meto en más "fregaos" de los que puedo o debo asumir (a la vista está...)</p>
-                    <p>¡Me encanta el café y los rollitos de canela!</p>
-                        <figure class="about-image">
-                            <img src="assets/cafe_rollito.jpg" alt="Foto sobre mí">
-                        </figure>
-                </aside>
-              
-            </div>
-        </article>
+      <article id="about" class="info">
+        <h2>Sobre mí</h2>
+        <div class="about-content">
+          <aside class="about-box">
+            <p>
+              ¡Bienvenid@! Soy Ana y quiero contarte el camino que he emprendido
+              en los últimos años.
+              <br />
+              Una reinvención profesional que me ha llevado a formarme en Data
+              Science y Full Stack.
+              <br />
+              Llegué a este mundo de la programación por casualidad, y ahora no
+              quiero irme de aquí!
+            </p>
+            <h3>Datos sobre mí:</h3>
+            <ul>
+              <li>
+                📍 Vivo: Canet de Berenguer, un pueblo de solo 6k habitantes
+              </li>
+              <li>📍 Trabajo: part-time en Madrid</li>
+              <li>🎓 Estudie ADE en la Universidad Politécnica de Valencia</li>
+              <li>🎓 Soy auditora ROAC</li>
+              <li>🎓 Llevo 20 años trabajando en una Big Four de Auditoría</li>
+              <li>
+                🎓 Hace dos años hice un máster en Data Science y Big Data
+              </li>
+              <li>
+                💡 Actualmente, cursando el Bootcamp de Web Full Stack
+                Developer, así que aprendiendo HTML, CSS y JavaScript
+              </li>
+            </ul>
+            <h3>Extracurricular:</h3>
+            <p>Tengo 2 hijos y 3 gatos</p>
+            <p>
+              Me meto en más "fregaos" de los que puedo o debo asumir (a la
+              vista está...)
+            </p>
+            <p>¡Me encanta el café y los rollitos de canela!</p>
+            <figure class="about-image">
+              <img src="assets/cafe_rollito.jpg" alt="Foto sobre mí" />
+            </figure>
+          </aside>
+        </div>
+      </article>
 
-        <section id="skills" class="info">
-            <h2>Mis Habilidades</h2>
-          
-            <h3>Idiomas</h3>
-            <div class="skills">
-              <div class="skill">Inglés</div>
-              <div class="progress-container">
-                <div class="progress-bar progreso-ingles"></div>
-              </div>
-          
-              <div class="skill">Valenciano</div>
-              <div class="progress-container">
-                <div class="progress-bar progreso-valenciano"></div>
-              </div>
-          
-              <div class="skill">Francés</div>
-              <div class="progress-container">
-                <div class="progress-bar progreso-frances"></div>
-              </div>
-          
-              <div class="skill">Alemán</div>
-              <div class="progress-container">
-                <div class="progress-bar progreso-aleman"></div>
-              </div>
-            </div>
-          
-            <h3>Programación</h3>
-            <p>...y sí, ya sabemos que HTML y CSS no son lenguajes de programación...</p>
-            <div class="skills">
-              <div class="skill">R</div>
-              <div class="progress-container">
-                <div class="progress-bar progreso-r"></div>
-              </div>
-          
-              <div class="skill">Python</div>
-              <div class="progress-container">
-                <div class="progress-bar progreso-python"></div>
-              </div>
-          
-              <div class="skill">HTML</div>
-              <div class="progress-container">
-                <div class="progress-bar progreso-html"></div>
-              </div>
-          
-              <div class="skill">CSS</div>
-              <div class="progress-container">
-                <div class="progress-bar progreso-css"></div>
-              </div>
-          
-              <div class="skill">JavaScript</div>
-              <div class="progress-container">
-                <div class="progress-bar progreso-javascript"></div>
-              </div>
-            </div>
-          </section>
-        
-        <section id="projects" class="projects">
-            <h2 class="projects-title">Mis Proyectos. Mi camino.</h2>
-            <p>Si quieres saber más sobre los grandes hitos de mi carrera profesional, aquí te cuento todo</p>
-            <a href="projects.html" class="btn" target="_blank">¡Ver más!</a>
-        </section>
+      <section id="skills" class="info">
+        <h2>Mis Habilidades</h2>
+
+        <h3>Idiomas</h3>
+        <div class="skills">
+          <div class="skill">Inglés</div>
+          <div class="progress-container">
+            <div class="progress-bar progreso-ingles"></div>
+          </div>
+
+          <div class="skill">Valenciano</div>
+          <div class="progress-container">
+            <div class="progress-bar progreso-valenciano"></div>
+          </div>
+
+          <div class="skill">Francés</div>
+          <div class="progress-container">
+            <div class="progress-bar progreso-frances"></div>
+          </div>
+
+          <div class="skill">Alemán</div>
+          <div class="progress-container">
+            <div class="progress-bar progreso-aleman"></div>
+          </div>
+        </div>
+
+        <h3>Programación</h3>
+        <p>
+          ...y sí, ya sabemos que HTML y CSS no son lenguajes de programación...
+        </p>
+        <div class="skills">
+          <div class="skill">R</div>
+          <div class="progress-container">
+            <div class="progress-bar progreso-r"></div>
+          </div>
+
+          <div class="skill">Python</div>
+          <div class="progress-container">
+            <div class="progress-bar progreso-python"></div>
+          </div>
+
+          <div class="skill">HTML</div>
+          <div class="progress-container">
+            <div class="progress-bar progreso-html"></div>
+          </div>
+
+          <div class="skill">CSS</div>
+          <div class="progress-container">
+            <div class="progress-bar progreso-css"></div>
+          </div>
+
+          <div class="skill">JavaScript</div>
+          <div class="progress-container">
+            <div class="progress-bar progreso-javascript"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 class="projects-title">Mis Proyectos. Mi camino.</h2>
+        <p>
+          Si quieres saber más sobre los grandes hitos de mi carrera
+          profesional, aquí te cuento todo
+        </p>
+        <a href="projects.html" class="btn" target="_blank">¡Ver más!</a>
+      </section>
     </main>
 
-     <section id="contact" class="contact-form">
-        <h2>Contacto</h2>
-        <p>Compartamos el gusto por seguir aprendiendo</p>
-        <form class="form-container" method="post">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
+    <section id="contact" class="contact-form">
+      <h2>Contacto</h2>
+      <p>Compartamos el gusto por seguir aprendiendo</p>
+      <form class="form-container" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
 
-            <label for="apellidos">Apellidos</label>
-            <input type="text" id="apellidos" name="apellidos" required>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" required />
 
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" required>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required />
 
-            <label for="github">Github username</label>
-            <input type="text" id="github" name="github" pattern="^@[^\s]+" placeholder="Con este formato (@<username>)">
+        <label for="github_username">Github username</label>
+        <input
+          type="text"
+          id="github_username"
+          name="github"
+          pattern="^@[^\s]+"
+          placeholder="Con este formato (@<username>)"
+        />
 
-            <fieldset>
-                <legend>¿Cómo me conociste?</legend>
-                <input type="radio" id="universidad" name="conocido" value="universidad" required>
-                <label for="universidad">Universidad</label>
-                <input type="radio" id="kickoff" name="conocido" value="kickoff">
-                <label for="kickoff">Keepcoding kick-off</label>
-                <input type="radio" id="colegio" name="conocido" value="colegio">
-                <label for="colegio">Colegio</label>
-                <input type="radio" id="github" name="conocido" value="github">
-                <label for="github">Github</label>
-            </fieldset>
+        <fieldset>
+          <legend>¿Cómo me conociste?</legend>
+          <label for="universidad">
+            <input
+              type="radio"
+              id="universidad"
+              name="conocido"
+              value="universidad"
+            />
+            Universidad
+          </label>
 
-            <label for="mensaje">Más información</label>
-            <textarea id="mensaje" name="mensaje" maxlength="180" required></textarea>
+          <label for="kickoff">
+            <input type="radio" id="kickoff" name="conocido" value="kickoff" />
+            Keepcoding kick-off
+          </label>
 
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Quiero acceso a la newsletter</label>
+          <label for="colegio">
+            <input type="radio" id="colegio" name="conocido" value="colegio" />
+            Colegio
+          </label>
+
+          <label for="github">
+            <input type="radio" id="github" name="conocido" value="github" />
+            Github
+          </label>
+        </fieldset>
+
+        <label for="mensaje">Más información</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          maxlength="180"
+          required
+        ></textarea>
+        <fieldset>
+        <label for="newsletter"></label>
+          <input type="checkbox" id="newsletter" name="newsletter" />Quiero
+          acceso a la newsletter
+        </label></fieldset>
 
         <div class="form-buttons">
-                <button type="submit">Enviar</button>
-                <button type="reset">Reset</button>
-            </div>
-        </form>
+          <button type="submit">Enviar</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
     </section>
 
     <footer class="footer">
-        <div class="footer-content">
-            <p>© 2025 El reto de Ana</p>
-            <nav class="footer-links">
-                <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Cookie Settings</a></li>
-                    <li><a href="#">Legal</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Cookies</a></li>
-                </ul>
-            </nav>
-            <nav class="social-links">
-                <ul>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="footer-content">
+        <p>© 2025 El reto de Ana</p>
+        <nav class="footer-links">
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </nav>
+        <nav class="social-links">
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-</body>
+  </body>
+</html>
